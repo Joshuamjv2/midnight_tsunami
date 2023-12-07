@@ -29,7 +29,7 @@ export default function Artists(){
         <div className="md:ml-8 mx-4 md:mr-4 md:px-24 py-12">
             <div className="flex w-full gap-8">
                 <div className="hidden xl:block">
-                    <h2 className="mb-4 font-bold text-2xl uppercase">{"We're a team"}</h2>
+                    <h2 className="mb-4 font-bold text-2xl uppercase">{"We're a community"}</h2>
                     <p className="leading-5 md:leading-6">
                         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui nostrum, voluptas porro illum voluptate architecto quo. Amet repudiandae laboriosam soluta cumque architecto laborum et veniam temporibus labore xcepturi cumque quas perferendis nesciunt tenetur!
                     </p>

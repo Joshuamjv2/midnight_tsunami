@@ -59,7 +59,7 @@ export default function Header() {
             {/* header */}
                 <header className="min-h-screen min-w-screen" style={
                     {
-                    backgroundImage: `linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(${currentSlide.image.src})`,
+                    backgroundImage: `linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(${currentSlide.image.src})`,
                     backgroundPosition: "center",
                     backgroundSize: "cover",
                     backgroundRepeat: "no-repeat"
