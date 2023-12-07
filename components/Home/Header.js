@@ -74,9 +74,9 @@ export default function Header() {
                         <div className='w-full'>
                             <div className='mx-4 md:flex justify-between'>
                             <div></div>
-                            <div className='text-center md:text-right md:right-4 md:w-3/4'>
+                            <div className='text-center md:text-right md:right-4 md:w-3/4 move_up'>
                                 <h3 className={`${lex.className} text-3xl md:text-5xl lg:text-6xl right-4`}>Sustainable art collaborations <br></br> and spaces</h3>
-                                <button className='bg-[#8001ff] hover:transition-all py-1 md:py-2 text-md md:text-lg mt-4 md:mt-8 px-4 md:px-8 font-semibold hover:bg-white hover:duration-300 hover:text-[#8001ff] uppercase md:mr-4'>Contact Us</button>
+                                <button className='bg-[#8001ff] opacity_anime_longer hover:transition-all py-1 md:py-2 text-md md:text-lg mt-4 md:mt-8 px-4 md:px-8 font-semibold hover:bg-white hover:duration-300 hover:text-[#8001ff] uppercase md:mr-4'>Contact Us</button>
                             </div>
                             </div>
                         </div>

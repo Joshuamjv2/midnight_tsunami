@@ -37,16 +37,15 @@ body {
   }
 }
 
-/* Apply the animation to the header class */
 .opacity_anime {
-  /* Other styles remain unchanged */
-
-  /* Set initial opacity to 0 for a fade-in effect */
   opacity: 0;
   animation: fadeIn 3s ease-in-out forwards;
-  /* animation-delay: 2s; */
-  /* Apply the animation */
-  /* Transition to ensure smoothness between changes */
+  transition: opacity 1s ease-in;
+}
+
+.opacity_anime_longer {
+  opacity: 0;
+  animation: fadeIn 1s 1s ease-in-out forwards;
   transition: opacity 1s ease-in;
 }
 
@@ -69,5 +68,27 @@ body {
 .slider {
   transform: translateX(100%);
   animation: slideIn ease-in-out forwards;
+  animation-duration: 1s;
+}
+
+
+@keyframes moveUp {
+  0% {
+    transform: translateY(30%);
+  }
+
+  /* 50% {
+      transform: translateX(30%);
+    } */
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+
+.move_up {
+  transform: translateY(100%);
+  animation: moveUp ease-in-out forwards;
   animation-duration: 1s;
 }
