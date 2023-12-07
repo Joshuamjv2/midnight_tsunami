@@ -5,6 +5,7 @@ import BackgroundImage3 from "../../public/images/tsunami3-32.jpg"
 import BackgroundImage4 from "../../public/images/tsunami3-10.jpg"
 import BackgroundImage5 from "../../public/images/community2.jpg"
 import { Lexend_Zetta } from 'next/font/google';
+import Image from "next/image"
 
 import { useState, useEffect } from "react";
 
@@ -19,11 +20,11 @@ const slides = [
     ]
 
 export default function Header() {
-    const [currentSlide, setCurrentSlide] = useState(slides[0])
+    const [currentSlide, setCurrentSlide] = useState(0)
     const [autoSlide, setAutoSlide] = useState(true)
 
     const handleSlideClick = (slide) => {
-        setCurrentSlide(slide);
+        setCurrentSlide(slides.indexOf(slide));
         setAutoSlide(false); // Stop auto sliding when a slide is clicked
     };
 
@@ -32,11 +33,11 @@ export default function Header() {
         let sliderTime = 6000;
 
         if (autoSlide) {
-            let currentIndex = slides.indexOf(currentSlide);
+            let currentIndex = currentSlide;
 
             changeSlides = setInterval(() => {
                 currentIndex = (currentIndex + 1) % slides.length;
-                setCurrentSlide(slides[currentIndex]);
+                setCurrentSlide(currentIndex);
                 console.log(currentSlide)
 
                 if (currentIndex === slides.length - 1) {
@@ -52,39 +53,43 @@ export default function Header() {
         return () => {
             clearInterval(changeSlides);
         };
-    }, [autoSlide, currentSlide, slides]);
+    }, [autoSlide, currentSlide]);
 
     return (
-            <div>
+            <div className="relative">
             {/* header */}
-                <header className="min-h-screen min-w-screen" style={
-                    {
-                    backgroundImage: `linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(${currentSlide.image.src})`,
-                    backgroundPosition: "center",
-                    backgroundSize: "cover",
-                    backgroundRepeat: "no-repeat"
-                    }}>
-                    <div className='min-h-screen flex overflow-hidden items-center'>
-                    <div className='w-full'>
-                        <div className='mx-4 md:flex justify-between'>
-                        <div></div>
-                        <div className='text-center md:text-right md:right-4 md:w-3/4'>
-                            <h3 className={`${lex.className} text-3xl md:text-5xl lg:text-6xl right-4`}>Sustainable art collaborations <br></br> and spaces</h3>
-                            <button className='bg-[#8001ff] hover:transition-all py-1 md:py-2 text-md md:text-lg mt-4 md:mt-8 px-4 md:px-8 font-semibold hover:bg-white hover:duration-300 hover:text-[#8001ff] uppercase md:mr-4'>Contact Us</button>
-                        </div>
+                <div>
+                    <header className="min-h-screen min-w-screen overflow-hidden relative" >
+                        {
+                            slides.map((slide, index)=>
+                                <div key={slide.title} className={`absolute inset-0 w-full h-full ${currentSlide == index ? "opacity-100 slider": "opacity-0 -z-10"}`}>
+                                    <Image src={slide.image} alt={slide.title} layout="fill" objectFit="cover"  priority />
+                                    <div className="h-full absolute bg-black bg-opacity-70 top-0 w-full left-0"></div>
+                                </div>
+                            )
+                        }
+                    </header>
+                </div>
+                <div className='min-h-screen flex overflow-hidden items-center absolute top-0'>
+                        <div className='w-full'>
+                            <div className='mx-4 md:flex justify-between'>
+                            <div></div>
+                            <div className='text-center md:text-right md:right-4 md:w-3/4'>
+                                <h3 className={`${lex.className} text-3xl md:text-5xl lg:text-6xl right-4`}>Sustainable art collaborations <br></br> and spaces</h3>
+                                <button className='bg-[#8001ff] hover:transition-all py-1 md:py-2 text-md md:text-lg mt-4 md:mt-8 px-4 md:px-8 font-semibold hover:bg-white hover:duration-300 hover:text-[#8001ff] uppercase md:mr-4'>Contact Us</button>
+                            </div>
+                            </div>
                         </div>
                     </div>
-                    </div>
-                    <div className="relative w-full">
+                    <div className="w-full opacity_anime delay-1000">
                         <div className="flex justify-center absolute bottom-8 w-full">
                             <ul className="flex justify-center w-full gap-8 md:gap-16">
                                 {slides.map((slide, index) => <li className="cursor-pointer" onClick={() => handleSlideClick(slide)} key={index}>
-                                    <div className={`h-5 w-5 border-4 rounded-full ${index === slides.indexOf(currentSlide) && "bg-[#8001ff]"}`}></div>
+                                    <div className={`h-5 w-5 border-4 rounded-full ${index === currentSlide && "bg-[#8001ff]"}`}></div>
                                 </li>)}
                             </ul>
                         </div>
                     </div>
-                </header>
             </div>
     )
 }

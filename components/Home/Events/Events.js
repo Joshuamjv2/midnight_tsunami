@@ -8,7 +8,7 @@ import event3 from "../../../public/images/art1.jpg"
 
 const events = [
     {image: event1, title: "Rooftop Transit", details: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis est itaque voluptate vel vero incidunt placeat debitis quasi laborum, cupiditate laudantium quas nihil perferendis impedit, ipsa distinctio natus ea tenetur recusandae. Quasi aut quam sint iure earum nesciunt! Minima harum quisquam nobis!"},
-    {image: event2, title: "Enth Rave", details: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis est itaque voluptate vel vero incidunt placeat debitis quasi laborum, cupiditate laudantium quas nihil perferendis impedit, ipsa distinctio natus ea tenetur recusandae. Quasi aut quam sint iure earum nesciunt! Minima harum quisquam nobis!"},
+    {image: event2, title: "Masquerade Scene", details: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis est itaque voluptate vel vero incidunt placeat debitis quasi laborum, cupiditate laudantium quas nihil perferendis impedit, ipsa distinctio natus ea tenetur recusandae. Quasi aut quam sint iure earum nesciunt! Minima harum quisquam nobis!"},
     {image: event3, title: "Drum move", details: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis est itaque voluptate vel vero incidunt placeat debitis quasi laborum, cupiditate laudantium quas nihil perferendis impedit, ipsa distinctio natus ea tenetur recusandae. Quasi aut quam sint iure earum nesciunt! Minima harum quisquam nobis!"}
 ]
 

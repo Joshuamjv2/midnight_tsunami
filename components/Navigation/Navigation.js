@@ -7,7 +7,7 @@ import Image from "next/image";
 
 export default function Navigation(){
     return(
-        <div className="z-40 absolute">
+        <div className="z-40 absolute opacity_anime">
             <div className="text-white fixed w-full py-2">
                 <div className={`flex justify-between items-center px-4 relative py-2`}>
                     <div className="flex gap-2 items-center">
