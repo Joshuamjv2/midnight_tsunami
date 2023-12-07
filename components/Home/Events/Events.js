@@ -25,7 +25,7 @@ export default function Events(){
             <div className="md:ml-8 mx-4 md:mr-4 md:px-24 py-12">
 
                 <h2 className="mb-4 font-bold text-2xl uppercase">Upcoming Events</h2>
-                <div className="flex flex-col gap-16 justify-center items-center">
+                <div className="flex flex-col gap-16 justify-center items-center"> 
                     {events.map(event => <SingleEvent key={event.title} title={event.title} image={event.image} details={event.details} />)}
                 </div>
             </div>
