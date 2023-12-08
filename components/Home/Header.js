@@ -62,7 +62,7 @@ export default function Header() {
                     <header className="min-h-screen min-w-screen overflow-hidden relative" >
                         {
                             slides.map((slide, index)=>
-                                <div key={slide.title} className={`absolute inset-0 w-full h-full ${currentSlide == index ? "opacity-100 slider": "opacity-0 -z-10"}`}>
+                                <div key={slide.title} className={`absolute inset-0 w-full h-full ${currentSlide == index ? "opacity-100 opacity_anime delay-1000": "opacity-0 -z-10"}`}>
                                     <Image src={slide.image} alt={slide.title} layout="fill" objectFit="cover"  priority />
                                     <div className="h-full absolute bg-black bg-opacity-70 top-0 w-full left-0"></div>
                                 </div>
@@ -83,9 +83,9 @@ export default function Header() {
                     </div>
                     <div className="w-full opacity_anime delay-1000">
                         <div className="flex justify-center absolute bottom-8 w-full">
-                            <ul className="flex justify-center w-full gap-8 md:gap-16">
+                            <ul className="flex justify-center w-full gap-6 md:gap-16">
                                 {slides.map((slide, index) => <li className="cursor-pointer" onClick={() => handleSlideClick(slide)} key={index}>
-                                    <div className={`h-5 w-5 border-4 rounded-full ${index === currentSlide && "bg-[#8001ff]"}`}></div>
+                                    <div className={`h-3 w-3 md:h-5 md:w-5 border-2 md:border-4 rounded-full ${index === currentSlide && "bg-[#8001ff]"}`}></div>
                                 </li>)}
                             </ul>
                         </div>
