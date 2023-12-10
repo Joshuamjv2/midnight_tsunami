@@ -6,7 +6,7 @@ import { useState } from "react"
 export default function SingleArtist({image=nana, name="Creed"}){
     const [hovered, setHovered] = useState(false)
     return (
-        <div className="relative">
+        <div className="relative border">
             <div className="cursor-pointer" onMouseEnter={()=>setHovered(true)} onMouseLeave={()=>setHovered(false)}>
                 <div className="h-full">
                     <Image src={image} alt={name} className={`h-auto w-full object-fill`}/>

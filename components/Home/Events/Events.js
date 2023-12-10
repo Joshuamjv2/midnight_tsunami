@@ -1,4 +1,6 @@
 import SingleEvent from "./SingleEvent";
+import { motion, useScroll, useTransform } from "framer-motion";
+import SectionTitle from "@/components/SectionTitle";
 import BackgroundImage from "../../../public/images/nora_bg-1.png"
 import event1 from "../../../public/images/community6.jpg"
 import event2 from "../../../public/images/crowd2.jpg"
@@ -13,19 +15,21 @@ const events = [
 ]
 
 
+
+
 export default function Events(){
     return (
         <div className="" style={
                 {
-                    backgroundImage: `linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(${BackgroundImage.src})`,
+                    backgroundImage: `linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(${BackgroundImage.src})`,
                     backgroundPosition: "center",
                     backgroundSize: "cover",
                     backgroundRepeat: "no-repeat"
                 }}>
             <div className="md:ml-8 mx-4 md:mr-4 md:px-24 py-12">
 
-                <h2 className="mb-4 font-bold text-2xl uppercase">Upcoming Events</h2>
-                <div className="flex flex-col gap-16 justify-center items-center"> 
+                <SectionTitle title={"Upcoming Events"} />
+                <div className="flex flex-col gap-16 justify-center items-center text-white">
                     {events.map(event => <SingleEvent key={event.title} title={event.title} image={event.image} details={event.details} />)}
                 </div>
             </div>

@@ -74,18 +74,22 @@ export default function Header() {
                         <div className='w-full'>
                             <div className='mx-4 md:flex justify-between'>
                             <div></div>
-                            <div className='text-center md:text-right md:right-4 md:w-3/4 move_up'>
-                                <h3 className={`${lex.className} text-3xl md:text-5xl lg:text-6xl right-4`}>Sustainable art collaborations <br></br> and spaces</h3>
-                                <button className='bg-[#8001ff] opacity_anime_longer hover:transition-all py-1 md:py-2 text-md md:text-lg mt-4 md:mt-8 px-4 md:px-8 font-semibold hover:bg-white hover:duration-300 hover:text-[#8001ff] uppercase md:mr-4'>Contact Us</button>
+                            <div className='text-center md:text-right md:right-4 md:w-3/4 move_up text-white'>
+                                <h3 className={`${lex.className} text-3xl md:text-5xl lg:text-6xl right-4 opacity_anime`}>Sustainable art collaborations <br></br> <span className="">and spaces</span></h3>
+                                <button className='bg-[#8001ff] opacity_anime_longer hover:transition-all py-1 md:py-2 text-md md:text-lg mt-4 px-4 md:px-8 font-semibold hover:bg-white hover:duration-300 hover:text-[#8001ff] uppercase md:mr-4'>Contact Us</button>
                             </div>
                             </div>
                         </div>
                     </div>
                     <div className="w-full opacity_anime delay-1000">
-                        <div className="flex justify-center absolute bottom-8 w-full">
+                        <div className="flex md:hidden justify-between absolute w-full bottom-8 px-4">
+                            <p onClick={()=>{if (currentSlide > 0){setCurrentSlide(currentSlide-1)}}} className="cursor-pointer text-sm">Prev</p>
+                            <p onClick={()=>{if (currentSlide < slides.length-1){setCurrentSlide(currentSlide+1)}}} className="cursor-pointer text-sm">Next</p>
+                        </div>
+                        <div className="hidden md:flex justify-center absolute bottom-8 w-full">
                             <ul className="flex justify-center w-full gap-6 md:gap-16">
                                 {slides.map((slide, index) => <li className="cursor-pointer" onClick={() => handleSlideClick(slide)} key={index}>
-                                    <div className={`h-3 w-3 md:h-5 md:w-5 border-2 md:border-4 rounded-full ${index === currentSlide && "bg-[#8001ff]"}`}></div>
+                                    <div className={`h-3 w-3 md:h-5 md:w-5 rounded-full ${index === currentSlide ? "bg-[#8001ff]": "bg-[#ffffff]"}`}></div>
                                 </li>)}
                             </ul>
                         </div>

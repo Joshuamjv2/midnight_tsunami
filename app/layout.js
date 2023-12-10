@@ -16,7 +16,9 @@ export default function RootLayout({ children }) {
       <body className={`${saira.className}`}>
         <Navigation />
         <Socials />
-        {children}
+        <div className=''>
+          {children}
+        </div>
       </body>
     </html>
   )
