@@ -5,7 +5,7 @@ export default function SingleEvent({image = sample, title = "Rooftop Transit", 
     return  (
         <div className="flex flex-col justify-center md:flex-row gap-4 md:gap-16 w-full h-4/5 items-end">
             <div className="md:w-1/2 w-full cursor-pointer">
-                <Image src={image} alt="This is a property" className="hover:scale-105 hover:duration-300 object-cover h-full w-full" />
+                <Image src={image} alt="This is a property" className="hover:scale-105 hover:duration-300 object-cover h-full w-full border-2 rounded-xl" />
             </div>
             <div className="md:w-1/2">
                 <div className="flex justify-between items-start">

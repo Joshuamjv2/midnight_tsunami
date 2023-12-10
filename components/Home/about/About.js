@@ -17,7 +17,7 @@ export default function About(){
                     backgroundSize: "cover",
                     backgroundRepeat: "no-repeat"
                 }}>
-            <div className="md:ml-8 mx-4 md:mr-4 md:px-24 py-12">
+            <div className="md:ml-8 mx-4 md:mr-4 md:px-24 py-24">
                 <div className="flex flex-col w-full justify-between">
                     <div className="lg:w-1/2">
                         <SectionTitle title={"About Us"} />

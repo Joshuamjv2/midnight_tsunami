@@ -27,7 +27,7 @@ export default function Artists(){
                     backgroundSize: "cover",
                     backgroundRepeat: "no-repeat"
                 }}>
-        <div className="md:ml-8 mx-4 md:mr-4 md:px-24 py-12">
+        <div className="md:ml-8 mx-4 md:mr-4 md:px-24 py-24">
             <div className="lg:hidden">
                 <SectionTitle title={"We're a community"} size={"text-xl"} />
             </div>

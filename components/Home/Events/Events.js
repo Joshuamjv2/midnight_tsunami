@@ -26,7 +26,7 @@ export default function Events(){
                     backgroundSize: "cover",
                     backgroundRepeat: "no-repeat"
                 }}>
-            <div className="md:ml-8 mx-4 md:mr-4 md:px-24 py-12">
+            <div className="md:ml-8 mx-4 md:mr-4 md:px-24 py-24">
 
                 <SectionTitle title={"Upcoming Events"} />
                 <div className="flex flex-col gap-16 justify-center items-center text-white">
