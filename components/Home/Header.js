@@ -1,5 +1,6 @@
 "use client"
 import BackgroundImage from "../../public/images/tsunami2-97.jpg"
+import BackgroundImage8 from "../../public/images/nora_bg-1.png"
 import BackgroundImage2 from "../../public/images/tsunami2-113.jpg"
 import BackgroundImage3 from "../../public/images/tsunami3-32.jpg"
 import BackgroundImage4 from "../../public/images/tsunami3-10.jpg"
@@ -16,7 +17,7 @@ const slides = [
         {image: BackgroundImage2, title: "Image 2"},
         {image: BackgroundImage3, title: "Image 3"},
         {image: BackgroundImage4, title: "Image 4"},
-        {image: BackgroundImage5, title: "Image 5"}
+        // {image: BackgroundImage5, title: "Image 5"}
     ]
 
 export default function Header() {

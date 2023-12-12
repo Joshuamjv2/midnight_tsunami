@@ -6,6 +6,7 @@ import Artists from "@/components/Home/artists/Artists";
 import Clients from "@/components/Home/clients/Clients";
 import Header from "@/components/Home/Header";
 import About from "@/components/Home/about/About";
+import About2 from "@/components/Home/about/About2";
 
 const lex = Lexend_Zetta({ subsets: ['latin'], weight: ['400', '500', '600'] })
 
@@ -16,7 +17,7 @@ export default function Home() {
       <Header />
 
       {/* About Section */}
-      <About />
+      <About2 />
       <Events />
       <Artists />
       {/* <Clients /> */}

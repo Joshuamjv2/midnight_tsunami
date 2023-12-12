@@ -34,7 +34,7 @@ export default function Artists(){
             <div className="flex w-full gap-8">
                 <div className="hidden lg:block">
                     <SectionTitle title={"We're a community"} size={"text-xl"} />
-                    <p className="leading-5 md:leading-6 text-white">
+                    <p className="leading-5 md:leading-6">
                         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui nostrum, voluptas porro illum voluptate architecto quo. Amet repudiandae laboriosam soluta cumque architecto laborum et veniam temporibus labore xcepturi cumque quas perferendis nesciunt tenetur!
                     </p>
                 </div>

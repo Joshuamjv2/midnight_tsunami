@@ -8,7 +8,7 @@ export default function AboutNav({image, name, link}){
                 <div className="absolute bg-black bg-opacity-50 w-full h-full flex items-center justify-center hover:animate-pulse">
                     <p className="text-center font-bold text-white">{name}</p>
                 </div>
-                <Image src={image} alt="Image of about us section" className="h-full object-cover border-2 rounded-xl" />
+                <Image src={image} alt="Image of about us section" className="h-full object-cover" />
             </div>
         </Link>
     )

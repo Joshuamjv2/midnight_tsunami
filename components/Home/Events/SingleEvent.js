@@ -9,7 +9,7 @@ export default function SingleEvent({image = sample, title = "Rooftop Transit", 
             </div>
             <div className="md:w-1/2">
                 <div className="flex justify-between items-start">
-                    <h5 className="font-semibold text-lg mb-2 hover:text-[#8001ff] hover:duration-300 cursor-pointer">{title}</h5>
+                    <h5 className="font-semibold md:font-bold text-lg mb-2 hover:text-[#8001ff] md:text-3xl hover:duration-300 cursor-pointer text-[#8001ff]">{title}</h5>
                     <h5 className="text-[#8001ff] cursor-pointer md:hidden">See more ...</h5>
                 </div>
                 <p className="lg:w-4/5 leading-5 md:leading-6">{details}</p>
