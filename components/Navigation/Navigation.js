@@ -18,7 +18,7 @@ export default function Navigation(){
                             <Image src={logo} width={180} alt="logo" className="h-auto" />
                         </div>
                     </div>
-                    <div className="md:flex sm:gap-4 gap:8 lg:gap-12 items-center relative hidden">
+                    <div className="md:flex sm:gap-4 gap:8 lg:gap-12 items-center relative hidden uppercase text-sm">
                         <SingleNav name={"Home"} link={"/"} />
                         <SingleNav name={"Community"} link={"/"} />
                         <SingleNav name={"About"} link={"/blog"} />

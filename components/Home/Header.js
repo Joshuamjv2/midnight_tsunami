@@ -17,7 +17,7 @@ const slides = [
         {image: BackgroundImage2, title: "Image 2"},
         {image: BackgroundImage3, title: "Image 3"},
         {image: BackgroundImage4, title: "Image 4"},
-        // {image: BackgroundImage5, title: "Image 5"}
+        {image: BackgroundImage5, title: "Image 5"}
     ]
 
 export default function Header() {
