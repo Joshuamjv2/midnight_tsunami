@@ -76,7 +76,7 @@ export default function Header() {
                             <div className='mx-4 md:flex justify-between bg-opacity-50'>
                             <div></div>
                             <div className='text-center md:text-right md:right-4 md:w-3/4 move_up text-white'>
-                                <h3 className={`${lex.className} text-2xl sm:text-4xl md:text-5xl lg:text-6xl right-4 opacity_anime`}>Sustainable art collaborations <br></br> <span className="">and spaces</span></h3>
+                                <h3 className={`${lex.className} text-3xl sm:text-4xl md:text-5xl lg:text-6xl right-4 opacity_anime`}>Sustainable art collaborations <br></br> <span className="">and spaces</span></h3>
                                 <button className='bg-[#8001ff] opacity_anime_longer hover:transition-all py-1 md:py-2 text-md md:text-lg mt-4 px-4 md:px-8 font-semibold hover:bg-white hover:duration-300 hover:text-[#8001ff] uppercase md:mr-4'>Contact Us</button>
                             </div>
                             </div>
