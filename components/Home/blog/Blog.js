@@ -14,25 +14,25 @@ export default function Blog(){
                     backgroundRepeat: "no-repeat"
                 }}>
 
-            <div className="md:ml-8 mx-4 md:mr-4 md:px-24 py-24">
+            <div className="md:ml-8 mx-4 md:mr-4 md:px-24 pb-24">
                 <SectionTitle title={"Featured Blog"} size="text-3xl" />
-                <div className="flex">
+                <div className="flex flex-col lg:flex-row gap-4">
                     {/* main blog */}
-                    <div className=" w-4/6 flex gap-6 h-96">
-                        {/* <div className="w-full"> */}
-                            <Image src={event1} className="object-cover" alt="Event 1 Probably" />
-                        {/* </div> */}
-                        <div className="">
+                    <div className="lg:w-4/6 flex flex-col sm:flex-row gap-4 lg:gap-6">
+                        <div className="w-full h-96">
+                            <Image src={event1} className="object-cover h-96" alt="Event 1 Probably" />
+                        </div>
+                        <div className="sm:w-3/6">
                             <div>
-                                <h4 className="mb-2 text-2xl uppercase">First Blog Title</h4>
+                                <h4 className="mb-2 text-lg lg:text-xl font-bold uppercase">First Blog Title</h4>
                             </div>
-                            <article className="uppercase leading-tight text-clip overflow-hidden">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit odit magnam voluptas rerum officiis inventore? Asperiores aliquam nisi quas laborum maiores nobis odit, nostrum quaerat repellendus consectetur cupiditate tempore! Maiores! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, in! </article>
+                            <article className="uppercase leading-tight text-clip overflow-hidden text-sm">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit odit magnam voluptas rerum officiis inventore? Asperiores aliquam nisi quas laborum maiores nobis odit,  </article>
                         </div>
                     </div>
 
                     {/* other blogs */}
-                    <div className="w-2/6">
-                        <ul className="flex gap-4 flex-col">
+                    <div className="lg:w-2/6">
+                        <ul className="lg:flex grid grid-cols-3 gap-4 lg:flex-col justify-between items-center">
                             <SubBlog image={event1} title={"Testing title"} />
                             <SubBlog image={event1} title={"Testing title"} />
                             <SubBlog image={event1} title={"Testing title"} />

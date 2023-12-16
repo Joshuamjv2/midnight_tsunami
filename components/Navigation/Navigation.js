@@ -22,6 +22,7 @@ export default function Navigation(){
                         <SingleNav name={"Home"} link={"/"} />
                         <SingleNav name={"Community"} link={"/"} />
                         <SingleNav name={"About"} link={"/blog"} />
+                        <SingleNav name={"Gallery"} link={"/artists"} />
                         <SingleNav name={"Contact Us"} link={"/artists"} />
                     </div>
                 </div>
