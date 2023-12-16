@@ -16,7 +16,7 @@ export default function Blog(){
             
             <div className="mx-auto max-w-screen-2xl">
                 <div className="md:ml-8 mx-4 md:mr-4 md:px-24 pb-24">
-                    <SectionTitle title={"Featured Blog"} size="text-3xl" />
+                    <SectionTitle title={"Featured Blog"} size="text-xl" />
                     <div className="flex flex-col lg:flex-row gap-4">
                         {/* main blog */}
                         <div className="lg:w-4/6 flex flex-col sm:flex-row gap-4 lg:gap-6">

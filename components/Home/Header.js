@@ -41,13 +41,13 @@ export default function Header() {
                 setCurrentSlide(currentIndex);
                 console.log(currentSlide)
 
-                if (currentIndex === slides.length - 1) {
-                    // Stop auto sliding after reaching the last slide
-                    // setCurrentSlide(slides[0])
-                    // sliderTime = sliderTime + 2000
-                    clearInterval(changeSlides);
-                    setAutoSlide(false);
-                }
+                // if (currentIndex === slides.length - 1) {
+                //     // Stop auto sliding after reaching the last slide
+                //     // setCurrentSlide(slides[0])
+                //     // sliderTime = sliderTime + 2000
+                //     clearInterval(changeSlides);
+                //     setAutoSlide(false);
+                // }
             }, sliderTime);
         }
 
