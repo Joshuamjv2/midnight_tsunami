@@ -26,11 +26,13 @@ export default function Events(){
                     backgroundSize: "cover",
                     backgroundRepeat: "no-repeat"
                 }}>
-            <div className="md:ml-8 mx-4 md:mr-4 md:px-24 pb-16 lg:pb-24">
+            <div className="mx-auto max-w-screen-2xl">
+                <div className="md:ml-8 mx-4 md:mr-4 md:px-24 pb-16 lg:pb-24">
 
-                <SectionTitle title={"Upcoming Events"} />
-                <div className="flex flex-col gap-16 justify-center items-center text-white">
-                    {events.map(event => <SingleEvent key={event.title} title={event.title} image={event.image} details={event.details} />)}
+                    <SectionTitle title={"Upcoming Events"} />
+                    <div className="flex flex-col gap-16 justify-center items-center text-white">
+                        {events.map(event => <SingleEvent key={event.title} title={event.title} image={event.image} details={event.details} />)}
+                    </div>
                 </div>
             </div>
         </div>

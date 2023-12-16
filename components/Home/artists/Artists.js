@@ -27,22 +27,26 @@ export default function Artists(){
                     backgroundSize: "cover",
                     backgroundRepeat: "no-repeat"
                 }}>
-        <div className="md:ml-8 mx-4 md:mr-4 md:px-24 pb-16 lg:pb-24">
-            <div className="lg:hidden">
-                <SectionTitle title={"We're a community"} size={"text-xl"} />
-            </div>
-            <div className="flex w-full gap-8">
-                <div className="hidden lg:block">
-                    <SectionTitle title={"We're a community"} size={"text-xl"} />
-                    <p className="leading-5 md:leading-6 uppercase text-sm tracking-widest">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui nostrum, voluptas porro illum voluptate architecto quo. Amet repudiandae laboriosam soluta cumque architecto laborum et veniam temporibus labore xcepturi cumque quas perferendis nesciunt tenetur!
-                    </p>
+            <div className="mx-auto max-w-screen-2xl">
+                <div className="mx-auto max-w-screen-2xl">
+                    <div className="md:ml-8 mx-4 md:mr-4 md:px-24 pb-16 lg:pb-24">
+                            <div className="lg:hidden">
+                                <SectionTitle title={"We're a community"} size={"text-xl"} />
+                            </div>
+                            <div className="flex w-full gap-8">
+                                <div className="hidden lg:block">
+                                    <SectionTitle title={"We're a community"} size={"text-xl"} />
+                                    <p className="leading-5 md:leading-6 uppercase text-sm tracking-widest">
+                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui nostrum, voluptas porro illum voluptate architecto quo. Amet repudiandae laboriosam soluta cumque architecto laborum et veniam temporibus labore xcepturi cumque quas perferendis nesciunt tenetur!
+                                    </p>
+                                </div>
+                                <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-8 md:gap-12">
+                                    {artists.map(artist => <SingleArtist key={artist.name} name={artist.name} image={artist.image} />)}
+                                </div>
+                            </div>
+                    </div>
                 </div>
-                <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-8 md:gap-12">
-                    {artists.map(artist => <SingleArtist key={artist.name} name={artist.name} image={artist.image} />)}
-                </div>
             </div>
-        </div>
         </div>
     )
 }
