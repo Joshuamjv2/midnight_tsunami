@@ -27,7 +27,8 @@ export default function Blog(){
                                 <div>
                                     <h4 className="mb-1 text-lg lg:text-xl font-bold uppercase cursor-pointer text-[#8001ff]">First Blog Title</h4>
                                 </div>
-                                <article className="uppercase leading-tight text-clip overflow-hidden text-sm text-gray-300">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit odit magnam voluptas rerum officiis inventore? Asperiores aliquam nisi quas laborum maiores nobis odit,  </article>
+                                <p className="py-1 text-xs uppercase">27th Sep, 2023</p>
+                                <article className="uppercase leading-tight text-clip overflow-hidden text-sm font-thin tracking-wider">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit odit magnam voluptas rerum officiis inventore? Asperiores aliquam nisi quas laborum maiores nobis odit,  </article>
                             </div>
                         </div>
 

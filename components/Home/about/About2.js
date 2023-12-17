@@ -37,7 +37,7 @@ export default function About2(){
                         {/* </div> */}
                     </div>
                     <div className=" flex justify-center">
-                        <p className="lg:w-1/2 py-8 text-sm tracking-wider italic text-gray-300 uppercase">
+                        <p className="xl:w-1/2 py-8 text-sm tracking-wider font-thin uppercase">
                             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti voluptas, mollitia beatae expedita optio provident. Labore quas commodi neque placeat! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur quibusdam earum facilis vitae, eligendi optio nemo nulla nihil distinctio quaerat architecto, praesentium pariatur ipsa id debitis. Eum, asperiores mollitia. Quis minima sequi soluta natus debitis rerum dolorem, cupiditate voluptatum dolor, cumque quaerat modi, officia magni reprehenderit vitae optio fugit ipsum.
                         </p></div>
 
