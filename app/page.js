@@ -5,7 +5,6 @@ import Events from "@/components/Home/Events/Events";
 import Artists from "@/components/Home/artists/Artists";
 import Clients from "@/components/Home/clients/Clients";
 import Header from "@/components/Home/Header";
-import About from "@/components/Home/about/About";
 import About2 from "@/components/Home/about/About2";
 import Blog from "@/components/Home/blog/Blog";
 

@@ -18,7 +18,7 @@ export default function About2(){
     return(
         <div className="bg-white" style={
                 {
-                    backgroundImage: `linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(${BackgroundImage.src})`,
+                    backgroundImage: `linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(${BackgroundImage.src})`,
                     backgroundPosition: "center",
                     backgroundSize: "cover",
                     backgroundRepeat: "no-repeat"
@@ -29,22 +29,22 @@ export default function About2(){
                         <SectionTitle title={"About Us"} />
                     </div>
                     <div className="flex justify-between h-32 md:h-72 lg:h-96 gap-4 relative">
-                        <div className="w-full md:w-2/6 absolute md:static md:block flex justify-center items-center">
-                            <p className="text-2xl sm:text-3xl lg:text-4xl uppercase md:text-left sm:w-2/3 pt-4 md:pt-0 md:w-full text-center">We are having a phrase here today!</p>
+                        <div className="w-full md:w-2/6 absolute md:static md:block flex justify-center items-center h-32 md:h-72 lg:h-96">
+                            <p className="text-2xl font-semibold md:font-normal sm:text-3xl lg:text-4xl uppercase md:text-left sm:w-2/3 pt-4 md:pt-0 md:w-full text-center">We are having a phrase here today!</p>
                         </div>
                         {/* <div> */}
                             <Image src={event1} alt="event image" className="object-cover" />
                         {/* </div> */}
                     </div>
                     <div className=" flex justify-center">
-                        <p className="lg:w-1/2 py-8 text-sm tracking-wider font-serif italic">
+                        <p className="lg:w-1/2 py-8 text-sm tracking-wider italic text-gray-300 uppercase">
                             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti voluptas, mollitia beatae expedita optio provident. Labore quas commodi neque placeat! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur quibusdam earum facilis vitae, eligendi optio nemo nulla nihil distinctio quaerat architecto, praesentium pariatur ipsa id debitis. Eum, asperiores mollitia. Quis minima sequi soluta natus debitis rerum dolorem, cupiditate voluptatum dolor, cumque quaerat modi, officia magni reprehenderit vitae optio fugit ipsum.
                         </p></div>
 
                     <div className="flex justify-between h-32 md:h-72 lg:h-96 gap-4 relative">
                         <Image src={event2} alt="event image" className="object-cover" />
-                        <div className="w-full md:w-2/6 absolute md:static md:block flex justify-center items-center">
-                            <p className="text-2xl sm:text-3xl lg:text-4xl uppercase md:text-left sm:w-2/3 pt-4 md:pt-0 md:w-full text-center">We are having a phrase here today!</p>
+                        <div className="w-full md:w-2/6 absolute md:static md:block flex justify-center items-center h-32 md:h-72 lg:h-96">
+                            <p className="text-2xl font-semibold md:font-normal sm:text-3xl lg:text-4xl uppercase md:text-left sm:w-2/3 pt-4 md:pt-0 md:w-full text-center">We are having a phrase here today!</p>
                         </div>
                     </div>
 

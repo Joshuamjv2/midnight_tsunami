@@ -22,7 +22,7 @@ export default function Artists(){
     return (
         <div  className="" style={
                 {
-                    backgroundImage: `linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(${BackgroundImage.src})`,
+                    backgroundImage: `linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(${BackgroundImage.src})`,
                     backgroundPosition: "center",
                     backgroundSize: "cover",
                     backgroundRepeat: "no-repeat"
@@ -36,7 +36,7 @@ export default function Artists(){
                             <div className="flex w-full gap-8">
                                 <div className="hidden lg:block">
                                     <SectionTitle title={"We're a community"} size={"text-xl"} />
-                                    <p className="leading-5 md:leading-6 uppercase text-sm tracking-widest">
+                                    <p className="leading-5 md:leading-6 uppercase text-sm tracking-widest text-gray-300">
                                         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui nostrum, voluptas porro illum voluptate architecto quo. Amet repudiandae laboriosam soluta cumque architecto laborum et veniam temporibus labore xcepturi cumque quas perferendis nesciunt tenetur!
                                     </p>
                                 </div>

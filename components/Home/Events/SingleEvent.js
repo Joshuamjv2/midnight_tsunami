@@ -11,10 +11,10 @@ export default function SingleEvent({image = sample, title = "Rooftop Transit", 
             </div>
             <div className="sm:w-1/2">
                 <div className="flex justify-between items-start">
-                    <h5 className="uppercase font-extralight text-lg mb-1 hover:text-[#8001ff] md:text-xl lg:text-2xl hover:duration-300 cursor-pointer text-[#8001ff]">{title}</h5>
+                    <h5 className="uppercase font-extralight text-lg mb-1 md:text-xl lg:text-2xl hover:duration-300 cursor-pointer text-[#8001ff]">{title}</h5>
                     <h5 className="text-[#8001ff] cursor-pointer md:hidden">See more ...</h5>
                 </div>
-                <p className="lg:w-4/5 leading-tight md:leading-5 uppercase text-sm tracking-widest">{details}</p>
+                <p className="lg:w-4/5 leading-tight md:leading-5 uppercase text-sm tracking-widest text-gray-300">{details}</p>
                 <button className="bg-[#8001ff] mt-2 lg:mt-4 py-2 px-2 hover:bg-white hover:text-[#8001ff] text-sm tracking-wider hidden md:block text-white md:font-semibold hover:duration-300 uppercase">See More</button>
             </div>
         </div>

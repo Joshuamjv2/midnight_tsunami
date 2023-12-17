@@ -8,7 +8,7 @@ export default function Blog(){
     return (
         <div className="" style={
                 {
-                    backgroundImage: `linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(${BackgroundImage.src})`,
+                    backgroundImage: `linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(${BackgroundImage.src})`,
                     backgroundPosition: "center",
                     backgroundSize: "cover",
                     backgroundRepeat: "no-repeat"
@@ -19,15 +19,15 @@ export default function Blog(){
                     <SectionTitle title={"Featured Blog"} size="text-xl" />
                     <div className="flex flex-col lg:flex-row gap-4">
                         {/* main blog */}
-                        <div className="lg:w-4/6 flex flex-col sm:flex-row gap-4 lg:gap-6">
+                        <div className="lg:w-4/6 flex flex-col sm:flex-row gap-4">
                             <div className="w-full h-96">
                                 <Image src={event1} className="object-cover h-96" alt="Event 1 Probably" />
                             </div>
                             <div className="sm:w-3/6">
                                 <div>
-                                    <h4 className="mb-2 text-lg lg:text-xl font-bold uppercase">First Blog Title</h4>
+                                    <h4 className="mb-1 text-lg lg:text-xl font-bold uppercase cursor-pointer text-[#8001ff]">First Blog Title</h4>
                                 </div>
-                                <article className="uppercase leading-tight text-clip overflow-hidden text-sm">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit odit magnam voluptas rerum officiis inventore? Asperiores aliquam nisi quas laborum maiores nobis odit,  </article>
+                                <article className="uppercase leading-tight text-clip overflow-hidden text-sm text-gray-300">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit odit magnam voluptas rerum officiis inventore? Asperiores aliquam nisi quas laborum maiores nobis odit,  </article>
                             </div>
                         </div>
 
